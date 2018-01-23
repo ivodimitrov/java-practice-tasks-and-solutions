@@ -24,4 +24,14 @@ public class IntegerExamplesTest {
                 Integer.toHexString(11));
 
     }
+
+    @Test
+    public void canConfirmIntMinAndMaxLimits() {
+
+        int minimumInt = -2147483648;
+        int maximumInt = 2147483647;
+
+        assertEquals("integer min", minimumInt, Integer.MIN_VALUE);
+        assertEquals("integer max", maximumInt, Integer.MAX_VALUE);
+    }
 }
