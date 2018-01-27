@@ -4,10 +4,10 @@ import org.junit.Test;
 
 public class ASysOutJunitSecondTest {
 
-    private IntegerExamplesTest integerExamplesTest = new IntegerExamplesTest();
+    private IntegerExercisesTest integerExercisesTestTest = new IntegerExercisesTest();
 
     @Test
     public void canOutputIntToHex() {
-        integerExamplesTest.canConvertIntToHex();
+        integerExercisesTestTest.canConvertIntToHex();
     }
 }
