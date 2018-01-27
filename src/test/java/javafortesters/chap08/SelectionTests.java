@@ -21,7 +21,6 @@ public class SelectionTests {
         return "http://" + url;
     }
 
-
     @Test
     public void ifAddHttp() {
         String url = "www.seleniumsimplified.com";
@@ -31,7 +30,6 @@ public class SelectionTests {
         assertTrue(url.startsWith("http://"));
         assertEquals("http://www.seleniumsimplified.com", url);
     }
-
 
     @Test
     public void ifElseAddHttp() {
@@ -59,7 +57,6 @@ public class SelectionTests {
         assertTrue(url.startsWith("http://"));
         assertEquals("http://www.seleniumsimplified.com", url);
     }
-
 
     @Test
     public void ifElseNestedAddHttpReformatted() {
@@ -107,7 +104,6 @@ public class SelectionTests {
         }
         return likelyGender;
     }
-
 
     @Test
     public void switchFallThroughExample() {
