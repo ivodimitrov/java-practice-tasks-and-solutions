@@ -35,7 +35,6 @@ public class IntegerExamplesTest {
 
     }
 
-
     @Test
     public void canConfirmIntMinAndMaxLimits() {
 

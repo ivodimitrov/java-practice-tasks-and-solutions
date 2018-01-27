@@ -19,4 +19,14 @@ public class WarningsForIntegerTest {
         assertEquals(firstFour, secondFour);
         assertTrue(firstFour == secondFour);
     }
+
+    @Test
+    public void integerEqualsIntegerAssertTrue() {
+
+        Integer firstFour = new Integer(4);
+        Integer secondFour = new Integer(4);
+
+        assertEquals(firstFour, secondFour);
+        assertTrue(firstFour.equals(secondFour));
+    }
 }
