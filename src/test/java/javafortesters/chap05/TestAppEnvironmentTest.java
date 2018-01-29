@@ -18,8 +18,10 @@ public class TestAppEnvironmentTest {
     @Test
     public void canGetDomainAndPortStatically() {
 
-        assertEquals("Just the Domain", "192.123.0.3", TestAppEnv.DOMAIN);
+        assertEquals("Just the Domain", "192.123.0.3",
+                TestAppEnv.DOMAIN);
 
-        assertEquals("Just the port", "67", TestAppEnv.PORT);
+        assertEquals("Just the port", "67",
+                TestAppEnv.PORT);
     }
 }
