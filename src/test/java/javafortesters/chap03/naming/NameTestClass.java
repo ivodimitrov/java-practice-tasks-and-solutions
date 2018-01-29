@@ -12,5 +12,9 @@ public class NameTestClass {
         // a failing test... it fails in the IDE
         assertTrue("whenClassHasTestInMiddleThenTestIsNotRun",
                 false);
+
+        System.out.println("***** ------------- *****");
+        System.out.println("***** NameTestClass *****");
+        System.out.println("***** ------------- *****");
     }
 }

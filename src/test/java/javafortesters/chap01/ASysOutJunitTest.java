@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class ASysOutJunitTest {
 
-    private AClassWithAMethod myClass = new AClassWithAMethod();
+    private AClassWithMethods myClass = new AClassWithMethods();
 
     @Test
     public void canOutputHelloWorldToConsole() {

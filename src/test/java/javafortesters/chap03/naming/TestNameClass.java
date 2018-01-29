@@ -11,5 +11,9 @@ public class TestNameClass {
         // this test will run from maven so it needs to pass
         assertTrue("whenClassHasTestAtFrontThenTestIsRun",
                 true);
+
+        System.out.println("***** ------------- *****");
+        System.out.println("***** TestNameClass *****");
+        System.out.println("***** ------------- *****");
     }
 }
