@@ -14,7 +14,7 @@ public class WarningsForIntegerTest {
         assertTrue(4 == 4);
 
         Integer firstFour = new Integer(4);
-        Integer secondFour = new Integer(4);
+        Integer secondFour = 4;
 
         assertEquals(firstFour, secondFour);
         assertTrue(firstFour == secondFour);
@@ -23,7 +23,7 @@ public class WarningsForIntegerTest {
     @Test
     public void integerEqualsIntegerAssertTrue() {
 
-        Integer firstFour = new Integer(4);
+        Integer firstFour = 4;
         Integer secondFour = new Integer(4);
 
         assertEquals(firstFour, secondFour);
