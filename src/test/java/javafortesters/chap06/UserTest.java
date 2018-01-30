@@ -3,6 +3,8 @@ package javafortesters.chap06;
 import javafortesters.domainentities.User;
 import org.junit.Test;
 
+import javax.jws.soap.SOAPBinding;
+
 import static org.junit.Assert.assertEquals;
 
 public class UserTest {
@@ -38,8 +40,17 @@ public class UserTest {
 
         user.setPassword("P@ZZwOr6");
 
-        assertEquals("Setter password expected", "P@ZZw0r6",
+        assertEquals("Setter password expected", "P@ZZwOr6",
                 user.getPassword());
+    }
+
+    @Test
+    public void aUserHasNormalPermissions() {
+
+        User user = new User();
+
+        assertEquals("Normal permission expected", "Normal",
+                user.getPermission());
     }
 
 }
