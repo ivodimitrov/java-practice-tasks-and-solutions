@@ -22,8 +22,11 @@ public class UserTest {
 
     @Test
     public void canSetNameToInvalidValue() {
+
         User auser = new User();
+
         auser.username = "12345£$%$";
+
         assertEquals("Invalid username",
                 "12345£$%$",
                 auser.username);
