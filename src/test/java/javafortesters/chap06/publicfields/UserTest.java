@@ -31,4 +31,5 @@ public class UserTest {
                 "12345£$%$",
                 auser.username);
     }
+
 }
