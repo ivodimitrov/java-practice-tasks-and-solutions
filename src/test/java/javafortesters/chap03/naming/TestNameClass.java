@@ -9,6 +9,7 @@ public class TestNameClass {
     @Test
     public void whenClassHasTestAtFrontThenTestIsRun() {
         // this test will run from maven so it needs to pass
+
         assertTrue("whenClassHasTestAtFrontThenTestIsRun",
                 true);
 

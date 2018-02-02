@@ -8,7 +8,6 @@ public class CommentsTest {
 
     @Test
     public void anEndOfLineComment() {
-
         boolean truthy = true;
 
         assertTrue(truthy); // commert till end of line
@@ -46,8 +45,6 @@ public class CommentsTest {
      */
 
     private int addTwoNumbers(int a, int b) {
-
         return a + b;
-
     }
 }

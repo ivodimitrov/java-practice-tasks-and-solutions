@@ -9,5 +9,4 @@ public class User {
         username = "admin";
         password = "pA55w0rD";
     }
-
 }

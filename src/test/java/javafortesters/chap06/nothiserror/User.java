@@ -12,7 +12,6 @@ public class User {
     // missing the `this.` so it will fail
     // the username being set is not the field, it is the parameter
 
-
     public User(String username, String password) {
         username = username;
         password = password;
@@ -25,5 +24,4 @@ public class User {
     public String getPassword() {
         return password;
     }
-
 }

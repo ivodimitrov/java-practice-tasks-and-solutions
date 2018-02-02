@@ -18,6 +18,7 @@ import java.util.Comparator;
 public class UserComparatorDisallowDupes implements Comparator {
 
     public int compare(Object oUser1, Object oUser2) {
+
         User user1 = (User) oUser1;
         User user2 = (User) oUser2;
 

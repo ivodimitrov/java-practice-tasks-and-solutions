@@ -37,5 +37,4 @@ public class ImportTest {
         Assert.assertEquals(5, 3 + 2);
         assertEquals(6, 3 + 3);
     }
-
 }

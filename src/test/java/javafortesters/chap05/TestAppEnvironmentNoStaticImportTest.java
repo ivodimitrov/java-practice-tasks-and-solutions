@@ -3,11 +3,10 @@ package javafortesters.chap05;
 import org.junit.Test;
 
 import static javafortesters.domainobject.TestAppEnv.*;
+import static org.junit.Assert.assertEquals;
 
 //import static javafortesters.domainobject.TestAppEnv.DOMAIN;
 //import static javafortesters.domainobject.TestAppEnv.PORT;
-
-import static org.junit.Assert.assertEquals;
 
     /* I could import everything on TestAppEnv statically, and then
     I don't need to prefix getUrl with TestAppEnv
@@ -19,7 +18,6 @@ import static org.junit.Assert.assertEquals;
     import static javafortesters.domainobject.TestAppEnv.DOMAIN;
     import static javafortesters.domainobject.TestAppEnv.PORT;
     */
-
 
 public class TestAppEnvironmentNoStaticImportTest {
 

@@ -3,8 +3,6 @@ package javafortesters.chap06;
 import javafortesters.domainentities.User;
 import org.junit.Test;
 
-import javax.jws.soap.SOAPBinding;
-
 import static org.junit.Assert.assertEquals;
 
 public class UserTest {
@@ -52,5 +50,4 @@ public class UserTest {
         assertEquals("Normal permission expected", "Normal",
                 user.getPermission());
     }
-
 }

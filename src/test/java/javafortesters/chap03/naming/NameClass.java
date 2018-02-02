@@ -10,6 +10,7 @@ public class NameClass {
     public void whenClassNameHasNoTestInItThenItIsNotRun() {
         // this test will not run from maven so i can make
         // a failing test... it fails in the IDE
+
         assertTrue("whenClassNameHasNoTestInItThenItIsNotRun",
                 false);
 

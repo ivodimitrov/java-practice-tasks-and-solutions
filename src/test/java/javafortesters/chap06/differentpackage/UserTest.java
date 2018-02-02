@@ -18,6 +18,4 @@ public class UserTest {
         assertEquals("Given password expected", "pA55w0rD",
                 user.getPassword());
     }
-
-
 }

@@ -15,5 +15,4 @@ public class StatementsTest {
                 4,
                 2 + 2);
     }
-
 }
