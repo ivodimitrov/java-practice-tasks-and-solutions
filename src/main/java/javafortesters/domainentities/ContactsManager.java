@@ -27,4 +27,12 @@ public class ContactsManager {
         return null;
     }
 
+    public void printContacts() {
+        for (int i = 0; i < friendsCount; i++) {
+            System.out.println("Name: " + myFriends[i].name +
+                    ", Email: " + myFriends[i].email + ", Phone Number: "
+                    + myFriends[i].phoneNumber);
+        }
+    }
+
 }
