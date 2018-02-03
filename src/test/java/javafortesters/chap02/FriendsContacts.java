@@ -1,4 +1,7 @@
-package javafortesters.domainentities;
+package javafortesters.chap02;
+
+import javafortesters.domainentities.Contact;
+import javafortesters.domainentities.ContactsManager;
 
 public class FriendsContacts {
 

@@ -7,7 +7,7 @@ public class ContactsManager {
     private int friendsCount;
 
     // Constructor:
-    ContactsManager() {
+    public ContactsManager() {
         friendsCount = 0;
         myFriends = new Contact[500];
     }
@@ -18,7 +18,7 @@ public class ContactsManager {
         friendsCount++;
     }
 
-    Contact searchContact(String searchName) {
+    public Contact searchContact(String searchName) {
         for (int i = 0; i < friendsCount; i++) {
             if (myFriends[i].getName().equals(searchName)) {
                 return myFriends[i];
