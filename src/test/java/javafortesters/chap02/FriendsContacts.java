@@ -7,12 +7,11 @@ public class FriendsContacts {
 
     public static void main(String[] args) {
 
-        // Create the ContactsManager object
         ContactsManager myContactsManager = new ContactsManager();
-        // Create a new Contact object for James
+
         Contact friendJames = new Contact("James",
                 "james@email.com", "0012223333");
-        // Add James Contact to the ContactsManager
+
         myContactsManager.addContact(friendJames);
         // Create a new Contact object for Cezanne
         Contact friendCezanne = new Contact("Cezanne",
