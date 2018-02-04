@@ -19,17 +19,15 @@ public class BankAccount {
 
     }
 
-    public int setAccount(int account) {
+    public void setAccount(int account) {
         this.account = account;
-        return account;
     }
 
     public int getBalance() {
         return balance;
     }
 
-    public int setBalance(int balance) {
+    public void setBalance(int balance) {
         this.balance = balance;
-        return balance;
     }
 }

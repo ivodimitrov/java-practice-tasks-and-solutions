@@ -29,8 +29,11 @@ public class BankAccountTest extends BankAccount {
     @Test
     public void canSetAccountNumberAndBalance() {
 
-        int accountNumber = setAccount(1001);
-        int accountBalance = setBalance(9999);
+        setAccount(1001);
+        int accountNumber = getAccount();
+
+        setBalance(9999);
+        int accountBalance = getAccount();
 
         assertEquals("Expected account number",
                 1001, accountNumber);
