@@ -13,8 +13,8 @@ public class BankAccountTest extends BankAccount {
     public void bankAccountHasDefaultAccountNumberAndBalance() {
 
         limit = 400;
-        int accountNumber = getAccountNumber();
-        int accountBalance = getAccountBalance();
+        int accountNumber = super.getAccountNumber();
+        int accountBalance = super.getAccountBalance();
 
         assertEquals("Expected limit",
                 400, limit);
@@ -48,7 +48,7 @@ public class BankAccountTest extends BankAccount {
         int accountNumber = getAccountNumber();
 
         setAccountBalance(9999);
-        int accountBalance = getAccountNumber();
+        int accountBalance = getAccountBalance();
 
         assertEquals("Expected account number",
                 1001, accountNumber);
