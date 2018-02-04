@@ -19,11 +19,26 @@ public class BankAccountTest extends BankAccount {
         assertEquals("Expected limit",
                 400, limit);
 
-        assertEquals("Expected account number",
+        assertEquals("Default account number",
                 0, accountNumber);
 
-        assertEquals("Expected balance",
+        assertEquals("Default account balance",
                 0, accountBalance);
+    }
+
+    @Test
+    public void canConstructWithAccountNumberAndBalance() {
+
+        BankAccount bankAccount = new BankAccount(1000, 8888);
+
+        int accountNumber = bankAccount.getAccountNumber();
+        int accountBalance = bankAccount.getAccountBalance();
+
+        assertEquals("Given account number",
+                1000, accountNumber);
+
+        assertEquals("Given account balance",
+                8888, accountBalance);
     }
 
     @Test
