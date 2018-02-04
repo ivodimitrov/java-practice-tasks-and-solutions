@@ -14,20 +14,19 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public int getAccount() {
+    public int getAccountNumber() {
         return account;
-
     }
 
-    public void setAccount(int account) {
+    public void setAccountNumber(int account) {
         this.account = account;
     }
 
-    public int getBalance() {
+    public int getAccountBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setAccountBalance(int balance) {
         this.balance = balance;
     }
 }
