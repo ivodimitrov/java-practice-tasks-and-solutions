@@ -47,13 +47,18 @@ public class BankAccountTest extends BankAccount {
         setAccountNumber(1001);
         int accountNumber = getAccountNumber();
 
-        setAccountBalance(9999);
-        int accountBalance = getAccountBalance();
-
         assertEquals("Expected account number",
                 1001, accountNumber);
 
-        assertEquals("Expected balance",
-                9999, accountBalance);
+        addAmountToAccountBalance(9999);
+
+        subtractAmountToAccountBalance(1111);
+
+        int accountBalance = getAccountBalance();
+
+        assertEquals("Expected account balance",
+                8888, accountBalance);
+
+       printAccountBalance();
     }
 }
