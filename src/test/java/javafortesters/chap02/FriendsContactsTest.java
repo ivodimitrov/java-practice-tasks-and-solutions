@@ -44,7 +44,7 @@ public class FriendsContactsTest {
         assertTrue("At index 2 expected Jessica",
                 myContactsManager.searchContactAtIndex(2, "Jessica"));
 
-        assertEquals("At index 2 expected Jessica", "Jessica",
+        assertEquals("Expected Jessica at index 2 expected ", "Jessica",
                 myContactsManager.contactAtIndex(2));
 
         // Display all friends names, emails and phone numbers
