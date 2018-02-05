@@ -2,10 +2,15 @@ package javafortesters.chap02;
 
 import javafortesters.domainentities.Contact;
 import javafortesters.domainentities.ContactsManager;
+import org.junit.Test;
 
-public class FriendsContacts {
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-    public static void main(String[] args) {
+public class FriendsContactsTest {
+
+    @Test
+    public void contactsHasBeenAdded() {
 
         ContactsManager myContactsManager = new ContactsManager();
 
@@ -24,12 +29,25 @@ public class FriendsContacts {
 
         myContactsManager.addContact(friendJessica);
 
-        // Search of a contact and display their phone number
+        assertEquals("Verify contacts counter", 3,
+                myContactsManager.getFriendsCount());
+
+        // Search of a contact and their phone number
         Contact result = myContactsManager.searchContact("Jessica");
-        System.out.println(result.getPhoneNumber());
+
+        assertEquals("Expected Jessica", "Jessica",
+                result.getName());
+
+        assertEquals("Expected phone number: 5554440001", "5554440001",
+                result.getPhoneNumber());
+
+        assertTrue("At index 2 expected Jessica",
+                myContactsManager.searchContactAtIndex(2, "Jessica"));
+
+        assertEquals("At index 2 expected Jessica", "Jessica",
+                myContactsManager.contactAtIndex(2));
 
         // Display all friends names, emails and phone numbers
         myContactsManager.printContacts();
     }
-
 }

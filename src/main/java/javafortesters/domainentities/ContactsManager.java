@@ -2,14 +2,20 @@ package javafortesters.domainentities;
 
 public class ContactsManager {
 
+
     // Fields:
     private Contact[] myFriends;
+
     private int friendsCount;
 
-    // Constructor:
+    // Constructors:
     public ContactsManager() {
         friendsCount = 0;
         myFriends = new Contact[500];
+    }
+
+    public int getFriendsCount() {
+        return friendsCount;
     }
 
     // Methods:
@@ -27,6 +33,14 @@ public class ContactsManager {
         return null;
     }
 
+    public boolean searchContactAtIndex(int index, String searchName) {
+        return myFriends[index].getName().equals(searchName);
+    }
+
+    public String contactAtIndex(int index) {
+        return myFriends[index].getName();
+    }
+
     public void printContacts() {
         for (int i = 0; i < friendsCount; i++) {
             System.out.println("Name: " + myFriends[i].getName() +
@@ -34,5 +48,4 @@ public class ContactsManager {
                     ", Phone Number: " + myFriends[i].getPhoneNumber());
         }
     }
-
 }
