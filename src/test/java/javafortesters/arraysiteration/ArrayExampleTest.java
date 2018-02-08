@@ -151,5 +151,4 @@ public class ArrayExampleTest {
 
         assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
     }
-
 }
