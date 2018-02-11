@@ -6,6 +6,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import static org.hamcrest.core.StringContains.containsString;
+
 public class JunitExpectedExceptionRuleTest {
 
     @Rule
@@ -15,6 +17,24 @@ public class JunitExpectedExceptionRuleTest {
     public void invalidPasswordThrown() throws InvalidPassword {
 
         expected.expect(InvalidPassword.class);
+        User user = new User("username", "<6");
+    }
+
+    @Test
+    public void invalidPasswordThrownBecauseOfLength()
+            throws InvalidPassword {
+
+        expected.expect(InvalidPassword.class);
+        expected.expectMessage("> 6 chars");
+        User user = new User("username", "<6");
+    }
+
+    @Test
+    public void invalidPasswordThrownBecauseOfLengthWithMatcher()
+            throws InvalidPassword {
+
+        expected.expect(InvalidPassword.class);
+        expected.expectMessage(containsString("> 6 chars"));
         User user = new User("username", "<6");
     }
 }
