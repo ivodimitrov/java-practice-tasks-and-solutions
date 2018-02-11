@@ -3,10 +3,7 @@ package javafortesters.collections;
 import javafortesters.domainentities.User;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -69,5 +66,65 @@ public class CollectionsExercisesTest {
         someUsers.clear();
 
         assertEquals(0, someUsers.size());
+    }
+
+    @Test
+    public void createAndManipulateAListOfUsers() {
+
+        List<User> someUsers = new ArrayList<User>();
+
+        assertEquals(0, someUsers.size());
+
+        User bob = new User("bob", "Passw0rd");
+        User eris = new User("eris", "Cha0sTime");
+
+        someUsers.add(bob);
+        assertEquals(1, someUsers.size());
+
+        someUsers.add(0, eris);
+        assertEquals(2, someUsers.size());
+
+        assertEquals(1, someUsers.indexOf(bob));
+        assertEquals(0, someUsers.indexOf(eris));
+
+        someUsers.remove(0);
+        assertEquals(0, someUsers.indexOf(bob));
+        assertEquals(1, someUsers.size());
+    }
+
+    @Test
+    public void createAndManipulateASetOfUsers() {
+
+        Set<User> someUsers = new HashSet<User>();
+
+        assertEquals(0, someUsers.size());
+
+        User bob = new User("bob", "Passw0rd");
+
+        someUsers.add(bob);
+        assertEquals(1, someUsers.size());
+
+        someUsers.add(bob);
+        assertEquals(1, someUsers.size());
+    }
+
+    @Test
+    public void createAndManipulateAMapOfUsers() {
+
+        Map<String, User> someUsers = new HashMap<String, User>();
+
+        assertEquals(0, someUsers.size());
+
+        User bob = new User("bob", "Passw0rd");
+        User eris = new User("eris", "Cha0sTime");
+
+        someUsers.put(bob.getUsername(), bob);
+        assertEquals(1, someUsers.size());
+
+        someUsers.put(bob.getUsername(), eris);
+        assertEquals(1, someUsers.size());
+
+        someUsers.put(eris.getUsername(), eris);
+        assertEquals(2, someUsers.size());
     }
 }
