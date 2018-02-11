@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 import static javafortesters.arraysiteration.MultiDimensionalArraysTest.print2DIntArray;
+import static javafortesters.helpermethods.GetCurrentExecutableMethodName.printCurrentExecutableMethodName;
 import static org.junit.Assert.assertEquals;
 
 public class ArrayExercisesTest {
@@ -25,7 +26,7 @@ public class ArrayExercisesTest {
     }
 
     @Test
-    public void createAnArrayOfUsersAndIterateOverTheirUsernames() {
+    public void createAnArrayOfUsersAndIterateOverTheirUserNames() {
 
         User[] users = new User[3];
 
@@ -37,7 +38,7 @@ public class ArrayExercisesTest {
         assertEquals("eris", users[1].getUsername());
         assertEquals("ken", users[2].getUsername());
 
-        System.out.println();
+        printCurrentExecutableMethodName();
 
         for (User aUser : users) {
             System.out.println(aUser.getUsername());
@@ -55,7 +56,7 @@ public class ArrayExercisesTest {
                     "password" + userId);
         }
 
-        System.out.println();
+        printCurrentExecutableMethodName();
 
         // check creation
         for (User aUser : users) {
@@ -118,6 +119,7 @@ public class ArrayExercisesTest {
             }
         }
 
+        printCurrentExecutableMethodName();
         print2DIntArray(triangle);
     }
 }
