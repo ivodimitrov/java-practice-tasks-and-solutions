@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Properties;
 
 import static org.hamcrest.CoreMatchers.is;
