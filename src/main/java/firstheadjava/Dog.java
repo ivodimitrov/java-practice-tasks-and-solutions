@@ -1,6 +1,6 @@
 package firstheadjava;
 
-public class Dog {
+public class Dog extends Canine {
 
     // instance variables (state). Things an object knows itself.
     int size;
@@ -42,9 +42,6 @@ public class Dog {
             }
             numOfBarks--;
         }
-    }
-
-    void eat() {
     }
 
     void chaseCat() {
