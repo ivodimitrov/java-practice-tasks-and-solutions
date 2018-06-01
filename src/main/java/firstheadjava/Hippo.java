@@ -1,4 +1,4 @@
 package firstheadjava;
 
-public class Hippo {
+public class Hippo extends Animal {
 }
