@@ -1,7 +1,7 @@
 package firstheadjava;
 
-public class Animal {
-// p. 212
+abstract public class Animal {
+// p. 227
 
     /**
      * WIth polymorphism, you can write code that don't
@@ -26,18 +26,23 @@ public class Animal {
     }
 
     public void makeNoise() {
-        System.out.println("Animal make noise");
+        System.out.println("Animal make noise.");
     }
 
-    public void eat() {
-        System.out.println("Animal eat");
-    }
+    /**
+     * An abstract class means the class must be extended, an abstract method
+     * means the method must be overridden.
+     * An abstract method has no body!
+     * If you declare an abstract method, you MUST mark the class abstract as
+     * well. You can’t have an abstract method in a non-abstract class.
+     */
+    public abstract void eat();
 
     void sleep() {
-        System.out.println("Animal sleep");
+        System.out.println("Animal sleep.");
     }
 
     void roam() {
-        System.out.println("Animal roam");
+        System.out.println("Animal roam.");
     }
 }

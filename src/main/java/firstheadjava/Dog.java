@@ -2,7 +2,7 @@ package firstheadjava;
 
 public class Dog extends Canine {
 
-    // instance variables (state). Things an object knows itself.
+    // Instance variables (state). Things an object knows itself.
     int size;
     String name;
 
@@ -28,9 +28,11 @@ public class Dog extends Canine {
             myDogs[x].bark(2);
             x++;
         }
+
+        dog1.go();
     }
 
-    // a method (behavior). Things an object do.
+    // A method (behavior). Things an object do.
     void bark(int numOfBarks) {
         while (numOfBarks > 0) {
             if (size > 60) {
