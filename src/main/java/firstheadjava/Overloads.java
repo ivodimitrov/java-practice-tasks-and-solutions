@@ -28,6 +28,4 @@ public class Overloads {
         String numString = "" + ssNumber;
         setUniqueID(numString);
     }
-
-
 }

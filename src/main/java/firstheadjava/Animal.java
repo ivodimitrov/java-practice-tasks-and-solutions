@@ -1,7 +1,7 @@
 package firstheadjava;
 
 abstract public class Animal {
-// p. 227
+// p. 248
 
     /**
      * WIth polymorphism, you can write code that don't

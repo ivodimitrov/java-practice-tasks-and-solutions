@@ -33,13 +33,11 @@ public class Wolf extends Canine {
 
     @Override
     public void makeNoise() {
-
         System.out.println("Wolf make noise. Overridden method.");
     }
 
     @Override
     public void eat() {
-
         System.out.println("Wolf eat. Overridden method.");
     }
 }

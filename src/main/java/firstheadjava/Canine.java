@@ -17,13 +17,11 @@ abstract class Canine extends Animal {
 
     @Override
     public void eat() {
-
         System.out.println("Canine eat. Overridden method.");
     }
 
     @Override
     public void roam() {
-
         System.out.println("Canine roam. Overridden method.");
     }
 

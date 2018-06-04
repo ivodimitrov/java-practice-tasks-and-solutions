@@ -1,6 +1,6 @@
 package firstheadjava;
 
-public class Cat extends Feline {
+public class Cat extends Feline implements Pet {
 
     /**
      * When we say you must implement the abstract method that means
@@ -10,11 +10,23 @@ public class Cat extends Feline {
      * the declared return type of the abstract method that you put
      * in that method is up to you. What java cares about is that
      * the method is there in your concrete subclass.
+     *
+     * Use the keyword “implements” followed by the interface name. Note that
+     * when you implement an interface you still get to extend a class.
      */
 
     @Override
     public void eat() {
-
         System.out.println("Cat eat. Overridden method.");
+    }
+
+    @Override
+    public void beFriendly() {
+        System.out.println("Cat is friendly.");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Cat is playing.");
     }
 }

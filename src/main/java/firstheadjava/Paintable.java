@@ -1,0 +1,4 @@
+package firstheadjava;
+
+interface Paintable {
+}
