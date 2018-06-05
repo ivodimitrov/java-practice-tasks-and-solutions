@@ -51,6 +51,7 @@ public class Dog extends Canine implements Pet, Saveable, Paintable {
         System.out.println();
 
         int x = 0;
+
         while (x < myDogs.length) {
             myDogs[x].bark(2);
             x++;
@@ -59,7 +60,9 @@ public class Dog extends Canine implements Pet, Saveable, Paintable {
         dog1.go();
 
         dog1.beFriendly();
+
         dog1.play();
+
         dog1.chaseCat();
     }
 
@@ -78,7 +81,7 @@ public class Dog extends Canine implements Pet, Saveable, Paintable {
     }
 
     private void chaseCat() {
-        System.out.println("Dog is chasing a cat");
+        System.out.println("Dog is chasing a cat.");
     }
 
     @Override

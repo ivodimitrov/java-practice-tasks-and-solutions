@@ -1,7 +1,7 @@
 package firstheadjava;
 
 abstract public class Animal {
-// p. 248
+// p. 266
 
     /**
      * WIth polymorphism, you can write code that don't
@@ -9,7 +9,6 @@ abstract public class Animal {
      * types into the program.
      */
     public static void main(String[] args) {
-
         Animal[] animals = new Animal[5];
         animals[0] = new Dog();
         animals[1] = new Cat();
@@ -17,10 +16,12 @@ abstract public class Animal {
         animals[3] = new Lion();
         animals[4] = new Hippo();
 
-
         for (Animal animal : animals) {
 
+            animal.sleep();
+
             animal.eat();
+
             animal.roam();
         }
     }
@@ -44,5 +45,9 @@ abstract public class Animal {
 
     void roam() {
         System.out.println("Animal roam.");
+    }
+
+    void callMethodFromSuperclass() {
+        System.out.println("This method will run inside the superclass Animal.");
     }
 }

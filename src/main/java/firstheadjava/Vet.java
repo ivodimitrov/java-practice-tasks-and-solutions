@@ -11,8 +11,8 @@ class Vet {
      *               to makeNoise(), and whatever Animal is really out there on
      *               the heap, that's whose makeNoise() method will run
      */
-    void giveShot(Animal animal) {
 
+    void giveShot(Animal animal) {
         // do horrible things to the Animal at
         //the other end of the "animal" parameter
         animal.makeNoise();

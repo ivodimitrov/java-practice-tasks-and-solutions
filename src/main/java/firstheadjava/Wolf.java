@@ -20,13 +20,16 @@ public class Wolf extends Canine {
         Wolf wolf = new Wolf();
 
         wolf.makeNoise();
-        System.out.println();
+
+        System.out.println("<----------!!!!!!!!!!---------->");
 
         wolf.roam();
-        System.out.println();
+
+        System.out.println("<----------!!!!!!!!!!---------->");
 
         wolf.eat();
-        System.out.println();
+
+        System.out.println("<----------!!!!!!!!!!---------->");
 
         wolf.sleep();
     }
