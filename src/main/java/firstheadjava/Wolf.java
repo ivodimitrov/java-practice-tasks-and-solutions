@@ -1,6 +1,19 @@
 package firstheadjava;
 
 public class Wolf extends Canine {
+    Wolf() {
+        super();
+        // constructor code goes here
+    }
+    
+    /**
+     * The constructor that takes
+     *
+     * @param theName and assigns it the name instance variable
+     */
+    Wolf(String theName) {
+        super(theName);
+    }
 
     /**
      * Inheritance lets you guarantee that all classes grouped under a certain

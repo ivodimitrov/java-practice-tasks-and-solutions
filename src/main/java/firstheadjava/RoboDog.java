@@ -6,7 +6,7 @@ public class RoboDog extends Robot implements Pet {
      * Classes from different inheritance trees
      * can implement the same interface.
      * <p>
-     * Class RoboDog doesn’t come from the Animal
+     * Class RoboDog does not come from the Animal
      * inheritance tree, but it still gets to be a Pet!
      */
 

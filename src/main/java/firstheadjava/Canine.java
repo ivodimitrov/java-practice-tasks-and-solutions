@@ -1,6 +1,18 @@
 package firstheadjava;
 
 abstract class Canine extends Animal {
+    Canine() {
+        // constructor code goes here
+    }
+
+    /**
+     * The constructor that takes
+     *
+     * @param theName and assigns it the name instance variable
+     */
+    Canine(String theName) {
+        super(theName);
+    }
 
     /**
      * When you override a method from a superclass, you're agreeing to
@@ -14,7 +26,6 @@ abstract class Canine extends Animal {
      * reference type for the purpose of polymorphism but you don't have
      * to worry about somebody making objects of that type
      */
-
     @Override
     public void eat() {
         System.out.println("Canine eat. Overridden method.");

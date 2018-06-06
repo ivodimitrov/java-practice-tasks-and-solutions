@@ -1,7 +1,21 @@
 package firstheadjava;
 
-abstract public class Animal {
-// p. 266
+public abstract class Animal {
+    // p. 268
+    private String name;
+
+    Animal() {
+
+    }
+
+    /**
+     * The constructor that takes
+     *
+     * @param theName and assigns it the name instance variable
+     */
+    Animal(String theName) {
+        name = theName;
+    }
 
     /**
      * WIth polymorphism, you can write code that don't
@@ -24,6 +38,10 @@ abstract public class Animal {
 
             animal.roam();
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void makeNoise() {

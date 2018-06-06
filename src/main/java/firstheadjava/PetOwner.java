@@ -8,7 +8,6 @@ public class PetOwner {
      * give it. As long as the object you pass in as the
      * argument is a subclass of Animal, it will work.
      */
-
     public void start() {
 
         Vet vet = new Vet();
