@@ -2,10 +2,10 @@ package firstheadjava;
 
 public abstract class Animal {
     // p. 294
-    private String name;
+    protected String name;
 
     Animal() {
-
+        // constructor code goes here
     }
 
     /**
