@@ -3,7 +3,6 @@ package firstheadjava;
 import java.awt.*;
 
 public class Hippo extends Animal {
-
     Color color;
 
     /**

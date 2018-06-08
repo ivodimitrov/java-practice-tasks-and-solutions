@@ -1,7 +1,6 @@
 package firstheadjava;
 
 class Duck extends Animal {
-
     // static final variables are constants
     public static final double NEW_PI = 3.141592653589793;
     private int size;
@@ -82,7 +81,7 @@ class Duck extends Animal {
         // this must never be overridden
     }
 
-    // final class
+    // final class (this code here is only for demonstration)
     //    final class MyMostPer£ectClass {
     //        // cannot be extended
     //  }
