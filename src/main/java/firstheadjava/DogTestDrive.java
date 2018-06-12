@@ -11,15 +11,14 @@ public class DogTestDrive {
         dog.size = 40;
         dog.bark(1);
 
-        System.out.println("<----------!!!!!!!!!!---------->");
+        System.out.println();
 
         Dog[] myDogs = new Dog[3];
         myDogs[0] = new Dog();
         myDogs[0].name = "Stamat";
         myDogs[0].bark(2);
 
-        System.out.println("<----------!!!!!!!!!!---------->");
-
+        System.out.println();
 
         Dog one = new Dog();
         one.name = "Goshko";

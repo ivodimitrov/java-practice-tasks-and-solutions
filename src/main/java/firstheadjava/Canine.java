@@ -43,12 +43,7 @@ abstract class Canine extends Animal {
     void go() {
         Canine canine = new Dog();
 
-        System.out.println("<----------!!!!!!!!!!---------->");
-
         canine.eat();
-
         canine.roam();
-
-        System.out.println("<----------!!!!!!!!!!---------->");
     }
 }

@@ -11,7 +11,7 @@ public class UsaADuck {
 
         firstDuck.printDuckSize();
 
-        System.out.println("-----------------");
+        System.out.println();
 
         secondDuck.printDuckSize();
     }

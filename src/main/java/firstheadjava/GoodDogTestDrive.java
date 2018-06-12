@@ -19,7 +19,7 @@ public class GoodDogTestDrive {
 
         System.out.println("Dog three: " + three.getSize());
 
-        System.out.println("<----------!!!!!!!!!!---------->");
+        System.out.println();
 
         one.bark();
 
