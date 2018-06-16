@@ -8,7 +8,7 @@ public class TestExceptions {
             System.out.println("start try");
             doRisky(test);
             System.out.println("end try");
-        } catch (Exception se) {
+        } catch (Exception ex) {
             System.out.println("scary exception");
         } finally {
             System.out.println("finally");

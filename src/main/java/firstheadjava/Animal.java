@@ -1,7 +1,7 @@
 package firstheadjava;
 
 public abstract class Animal {
-    // p. 336
+
     protected String name;
 
     Animal() {
