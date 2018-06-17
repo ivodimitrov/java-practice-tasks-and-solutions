@@ -3,9 +3,9 @@ package javafortesters.inheritance;
 import javafortesters.domainentities.User;
 import javafortesters.domainobject.TestAppEnv;
 
-public class EnvironmentUser extends User {
+class EnvironmentUser extends User {
 
-    public String getUrl() {
+    String getUrl() {
         return TestAppEnv.getUrl();
     }
 }
