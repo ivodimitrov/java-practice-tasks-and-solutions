@@ -8,10 +8,10 @@ public class VehicleDemo {
         int range;
 
         minivan.passengers = 7;
-        minivan.fuelCapacity = 16;
-        minivan.fuelConsumption = 21;
+        minivan.fuelcap = 16;
+        minivan.mpg = 21;
 
-        range = minivan.fuelCapacity * minivan.fuelConsumption;
+        range = minivan.fuelcap * minivan.mpg;
 
         System.out.println("Minivan can carry " + minivan.passengers +
                 " with a range of " + range);
