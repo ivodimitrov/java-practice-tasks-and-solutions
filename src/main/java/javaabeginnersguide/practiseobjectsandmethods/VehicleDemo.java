@@ -1,7 +1,9 @@
-package javaabeginnersguide;
+package javaabeginnersguide.practiseobjectsandmethods;
 
-public class CompFuel {
+public class VehicleDemo {
+
     public static void main(String args[]) {
+
         Vehicle minivan = new Vehicle();
         Vehicle sportscar = new Vehicle();
 

@@ -1,4 +1,4 @@
-package javaabeginnersguide;
+package javaabeginnersguide.practiseobjectsandmethods;
 
 class Vehicle {
 

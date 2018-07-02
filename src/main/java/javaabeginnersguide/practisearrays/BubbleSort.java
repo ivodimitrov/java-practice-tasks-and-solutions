@@ -1,4 +1,4 @@
-package javaabeginnersguide;
+package javaabeginnersguide.practisearrays;
 
 public class BubbleSort {
     public static void main(String args[]) {

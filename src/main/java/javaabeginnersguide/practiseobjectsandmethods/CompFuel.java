@@ -1,6 +1,6 @@
-package javaabeginnersguide;
+package javaabeginnersguide.practiseobjectsandmethods;
 
-public class ForLoopExample {
+public class CompFuel {
 
     public static void main(String args[]) {
 
