@@ -12,5 +12,9 @@ public class DefaultMethodDemo {
         // Can also call getAdminID(), because of default
         // implementation:
         System.out.println("Administrator ID is " + obj.getAdminID());
+
+        // No implementation or instance of MyIF is required to call
+        // getUniversalID( ) because it is static.
+        int uID = MyIF.getUniversalID();
     }
 }
