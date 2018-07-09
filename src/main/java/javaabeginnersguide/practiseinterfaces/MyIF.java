@@ -2,7 +2,7 @@ package javaabeginnersguide.practiseinterfaces;
 
 public interface MyIF {
     // This is a static interface method.
-    // static interface methods are not inherited by either an
+    // Static interface methods are not inherited by either an
     // implementing class or a subinterface.
     static int getUniversalID() {
         return 0;
@@ -17,4 +17,9 @@ public interface MyIF {
     default int getAdminID() {
         return 1;
     }
+
+    // A private method cannot be used by code outside the interface
+    // in which it is defined. This restriction includes subinterfaces because
+    // a private interface method is not inherited by a subinterface.
+
 }

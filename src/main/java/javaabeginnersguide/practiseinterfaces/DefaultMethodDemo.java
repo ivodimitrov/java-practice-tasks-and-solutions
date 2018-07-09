@@ -16,5 +16,6 @@ public class DefaultMethodDemo {
         // No implementation or instance of MyIF is required to call
         // getUniversalID( ) because it is static.
         int uID = MyIF.getUniversalID();
+        System.out.println("Universal ID is " + uID);
     }
 }
