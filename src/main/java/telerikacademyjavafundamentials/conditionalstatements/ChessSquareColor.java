@@ -3,16 +3,16 @@ package telerikacademyjavafundamentials.conditionalstatements;
 import java.util.Scanner;
 
 public class ChessSquareColor {
-    /*
-    Write a program that determines the color of a chessboard square based on its rank and file:
-    - files have values from a to h
-    - ranks have values from 1 to 8
-    Input
-    On the first line, you will receive f - the file
-    On the second line, you will receive r - the rank
-    Output
-    On the only line of output, print light or dark, based on your calculations
-     */
+  /*
+  Write a program that determines the color of a chessboard square based on its rank and file:
+   - files have values from a to h
+  - ranks have values from 1 to 8
+  Input
+  On the first line, you will receive f - the file
+  On the second line, you will receive r - the rank
+  Output
+  On the only line of output, print light or dark, based on your calculations
+   */
 
   public static void main(String[] args) {
 
