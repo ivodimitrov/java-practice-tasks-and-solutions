@@ -23,6 +23,7 @@ public class FindAverage {
     double inputNumbers;
     double sum = 0;
     int count = 0;
+    double average;
 
     numberOfValuesYouMustRead = in.nextInt();
 
@@ -31,6 +32,7 @@ public class FindAverage {
       sum = sum + inputNumbers;
       count++;
     }
-    System.out.println(df.format(sum / count));
+    average = (sum / count);
+    System.out.println(df.format(average));
   }
 }
