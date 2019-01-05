@@ -32,6 +32,7 @@ public class CalculateDiscount {
 
     }
 //    Other solution
+//
 //    Scanner sc = new Scanner(System.in);
 //    DecimalFormat df = new DecimalFormat("0.00");
 //    int items = sc.nextInt();
