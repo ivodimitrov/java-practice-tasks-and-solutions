@@ -31,6 +31,7 @@ public class CalculateDiscount {
       System.out.println(df.format(itemPriceAfterDiscount));
 
     }
+//    Other solution
 //    Scanner sc = new Scanner(System.in);
 //    DecimalFormat df = new DecimalFormat("0.00");
 //    int items = sc.nextInt();
