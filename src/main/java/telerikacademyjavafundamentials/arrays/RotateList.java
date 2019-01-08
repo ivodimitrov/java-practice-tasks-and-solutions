@@ -17,8 +17,8 @@ public class RotateList {
 
   public static void main(String[] args) {
 
-
     Scanner in = new Scanner(System.in);
+
     String[] inputArray = in.nextLine().split(",");
     int order = in.nextInt();
 
