@@ -25,9 +25,9 @@ public class ArrayExampleTest {
     public void arrayInitialization() {
         int[] integers = new int[10];
         int[] moreInts = new int[10];
-        int evenMore[] = new int[10];
+        int[] evenMore = new int[10];
 
-        String strings[] = new String[10];
+        String[] strings = new String[10];
 
         int[] zeroLenght = {};
         int[] moreZeroLenght = new int[0];
