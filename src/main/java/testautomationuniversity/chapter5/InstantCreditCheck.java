@@ -1,4 +1,4 @@
-package testautomationuniversity;
+package testautomationuniversity.chapter5;
 
 import java.util.Scanner;
 
@@ -30,7 +30,6 @@ public class InstantCreditCheck {
 
     private static double getSalary() {
         System.out.println("Enter your salary:");
-
         double salary = scanner.nextDouble();
         return salary;
     }
