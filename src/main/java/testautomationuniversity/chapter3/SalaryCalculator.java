@@ -1,13 +1,12 @@
 package testautomationuniversity.chapter3;
 
+import java.util.Scanner;
+
 /*
 IF Statement.
 All salespeople get a payment of $1000 a week.
 Salespeople who exceed 10 sales get an additional bonus of $250.
  */
-
-import java.util.Scanner;
-
 public class SalaryCalculator {
 
     public static void main(String[] args) {
