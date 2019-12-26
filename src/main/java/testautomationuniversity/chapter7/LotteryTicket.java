@@ -1,4 +1,4 @@
-package testautomationuniversity;
+package testautomationuniversity.chapter7;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -48,9 +48,9 @@ public class LotteryTicket {
      */
     private static boolean search(int[] array, int numberToSearchFor) {
 
-        /*This is called an enhanced loop.
-          It iterates through 'array' and
-          each time assigns the current element to 'value'
+        /*
+        This is called an enhanced loop.
+        It iterates through 'array' and each time assigns the current element to 'value'
          */
         for (int value : array) {
             if (value == numberToSearchFor) {
@@ -58,8 +58,9 @@ public class LotteryTicket {
             }
         }
 
-        /*If we've reached this point, then the entire array was searched
-          and the value was not found
+        /*
+        If we've reached this point, then the entire array was searched
+        and the value was not found
          */
         return false;
     }
