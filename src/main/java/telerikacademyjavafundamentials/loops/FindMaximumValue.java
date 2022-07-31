@@ -15,21 +15,21 @@ public class FindMaximumValue {
   -200 <= each number <= 200
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int numberOfValuesYouMustRead = in.nextInt();
-    double inputNumbers;
-    double max = Double.NEGATIVE_INFINITY;
+        int numberOfValuesYouMustRead = in.nextInt();
+        double inputNumbers;
+        double max = Double.NEGATIVE_INFINITY;
 
-    for (int i = 0; i < numberOfValuesYouMustRead; i++) {
-      inputNumbers = in.nextDouble();
+        for (int i = 0; i < numberOfValuesYouMustRead; i++) {
+            inputNumbers = in.nextDouble();
 
-      if (inputNumbers > max) {
-        max = inputNumbers;
-      }
+            if (inputNumbers > max) {
+                max = inputNumbers;
+            }
+        }
+        System.out.printf("%.0f", max);
     }
-    System.out.printf("%.0f", max);
-  }
 }

@@ -2,9 +2,9 @@ package javafortesters.domainentities;
 
 public class Contact {
 
-    private String name;
-    private String email;
-    private String phoneNumber;
+    private final String name;
+    private final String email;
+    private final String phoneNumber;
 
     public Contact(String name, String email, String phoneNumber) {
         this.name = name;

@@ -25,7 +25,7 @@ public class LotteryTicket {
             int randomNumber;
 
             /*
-            Generate random number then search to make sure it doesn't
+            Generate random number than search to make sure it doesn't
             already exist in the array. If it does, regenerate and search again.
              */
             do {
@@ -71,9 +71,7 @@ public class LotteryTicket {
         Arrays.sort(array);
 
         int index = Arrays.binarySearch(array, numberToSearchFor);
-        if (index >= 0) {
-            return true;
-        } else return false;
+        return index >= 0;
 
     }
 

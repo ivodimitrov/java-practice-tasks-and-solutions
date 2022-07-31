@@ -14,35 +14,35 @@ public class OddAndEvenProduct {
   If the two products are equal, output a string in the format yes PRODUCT_VALUE, otherwise write on the console no ODD_PRODUCT_VALUE EVEN_PRODUCT_VALUE
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int n = in.nextInt();
-    int[] sequence = new int[n];
+        int n = in.nextInt();
+        int[] sequence = new int[n];
 
-    int sumEven = 1;
-    int sumOdd = 1;
+        int sumEven = 1;
+        int sumOdd = 1;
 
-    for (int i = 0; i < n; i++) {
-      sequence[i] = in.nextInt();
+        for (int i = 0; i < n; i++) {
+            sequence[i] = in.nextInt();
+        }
+
+        for (int j = 0; j < n; j++) {
+            if (j % 2 == 0) {
+                sumEven *= sequence[j];
+            }
+        }
+
+        for (int k = 0; k < n; k++) {
+            if (k % 2 != 0) {
+                sumOdd *= sequence[k];
+            }
+        }
+
+        if (sumEven == sumOdd) {
+            System.out.println("yes " + sumEven);
+        } else System.out.println("no " + sumEven + " " + sumOdd);
     }
-
-    for (int j = 0; j < n; j++) {
-      if (j % 2 == 0) {
-        sumEven *= sequence[j];
-      }
-    }
-
-    for (int k = 0; k < n; k++) {
-      if (k % 2 != 0) {
-        sumOdd *= sequence[k];
-      }
-    }
-
-    if (sumEven == sumOdd) {
-      System.out.println("yes " + sumEven);
-    } else System.out.println("no " + sumEven + " " + sumOdd);
-  }
 }
 

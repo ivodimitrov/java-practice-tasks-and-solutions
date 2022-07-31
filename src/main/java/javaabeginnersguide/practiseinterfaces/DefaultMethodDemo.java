@@ -1,7 +1,7 @@
 package javaabeginnersguide.practiseinterfaces;
 
 public class DefaultMethodDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         MyIFImp obj = new MyIFImp();
 

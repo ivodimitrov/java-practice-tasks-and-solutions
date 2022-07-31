@@ -13,24 +13,24 @@ public class ReverseNumbers {
   On the only line of output, print all the numbers reversed in format n1, n2, n3, .. n
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String inputValues = in.nextLine();
-    String[] inputArray = inputValues.split(", ");
+        String inputValues = in.nextLine();
+        String[] inputArray = inputValues.split(", ");
 
-    int[] array = new int[inputArray.length];
+        int[] array = new int[inputArray.length];
 
-    for (int i = inputArray.length - 1; i >= 0; i--) {
+        for (int i = inputArray.length - 1; i >= 0; i--) {
 
-      array[i] = Integer.parseInt(inputArray[i]);
+            array[i] = Integer.parseInt(inputArray[i]);
 
-      if (i > 0) {
-        System.out.print(array[i] + ", ");
-      } else {
-        System.out.print(array[i]);
-      }
+            if (i > 0) {
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.print(array[i]);
+            }
+        }
     }
-  }
 }

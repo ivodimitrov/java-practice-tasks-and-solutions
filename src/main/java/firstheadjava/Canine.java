@@ -23,7 +23,7 @@ abstract class Canine extends Animal {
      * <p>
      * An abstract class means that nobody can ever make a new instance of
      * that class. You can still use that abstract class as a declared
-     * reference type for the purpose of polymorphism but you don't have
+     * reference type for the purpose of polymorphism, but you don't have
      * to worry about somebody making objects of that type
      */
     @Override

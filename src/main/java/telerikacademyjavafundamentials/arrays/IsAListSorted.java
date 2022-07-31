@@ -14,39 +14,40 @@ public class IsAListSorted {
   for each list you receive, print 'true' if sorted or 'false' otherwise.
    */
 
-  private static void testInput() {
-    String inputString = "3\n" +
-            "1,2,3,4,5\n" +
-            "1,2,8,9,9\n" +
-            "1,2,2,3,2";
+    private static void testInput() {
+        String inputString = """
+                3
+                1,2,3,4,5
+                1,2,8,9,9
+                1,2,2,3,2""";
 
-    ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
-    System.setIn(inputStream);
-  }
-
-  public static void main(String[] args) {
-
-    testInput();
-
-    Scanner scanner = new Scanner(System.in);
-
-    int n = Integer.parseInt(scanner.nextLine());
-
-    for (int i = 0; i < n; i++) {
-      String[] listStr = scanner.nextLine().split(",");
-      boolean isSorted = true;
-      for (int j = 0; j < listStr.length - 1; j++) {
-        if (Integer.parseInt(listStr[j]) > Integer.parseInt(listStr[j + 1])) {
-          isSorted = false;
-        }
-      }
-      if (isSorted) {
-        System.out.println("true");
-      } else {
-        System.out.println("false");
-      }
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
+        System.setIn(inputStream);
     }
-  }
+
+    public static void main(String[] args) {
+
+        testInput();
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 0; i < n; i++) {
+            String[] listStr = scanner.nextLine().split(",");
+            boolean isSorted = true;
+            for (int j = 0; j < listStr.length - 1; j++) {
+                if (Integer.parseInt(listStr[j]) > Integer.parseInt(listStr[j + 1])) {
+                    isSorted = false;
+                }
+            }
+            if (isSorted) {
+                System.out.println("true");
+            } else {
+                System.out.println("false");
+            }
+        }
+    }
 }
 
 

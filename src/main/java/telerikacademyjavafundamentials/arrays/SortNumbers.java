@@ -14,27 +14,27 @@ public class SortNumbers {
   On the only line of output, print all the numbers sorted in format n1, n2, n3, .. n
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String inputValues = in.nextLine();
-    String[] inputArray = inputValues.split(", ");
+        String inputValues = in.nextLine();
+        String[] inputArray = inputValues.split(", ");
 
-    Integer[] array = new Integer[inputArray.length];
+        Integer[] array = new Integer[inputArray.length];
 
-    for (int i = 0; i < inputArray.length; i++) {
-      array[i] = Integer.parseInt(inputArray[i]);
+        for (int i = 0; i < inputArray.length; i++) {
+            array[i] = Integer.parseInt(inputArray[i]);
+        }
+
+        Arrays.sort(array);
+
+        for (int i = inputArray.length - 1; i >= 0; i--) {
+            if (i > 0) {
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.print(array[i]);
+            }
+        }
     }
-
-    Arrays.sort(array);
-
-    for (int i = inputArray.length - 1; i >= 0; i--) {
-      if (i > 0) {
-        System.out.print(array[i] + ", ");
-      } else {
-        System.out.print(array[i]);
-      }
-    }
-  }
 }

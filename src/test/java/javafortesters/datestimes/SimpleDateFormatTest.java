@@ -27,28 +27,28 @@ public class SimpleDateFormatTest {
         simpleDateFormat.applyPattern(pattern);
         assertThat(simpleDateFormat.format(date), is("01/01/1970"));
 
-        System.out.println(String.format(
-                "|\"%s\"  |  \"%s\"|",
+        System.out.printf(
+                "|\"%s\"  |  \"%s\"|%n",
                 pattern,
-                simpleDateFormat.format(date)));
+                simpleDateFormat.format(date));
 
         pattern = "MMM/dd/yyy";
         simpleDateFormat.applyPattern(pattern);
         assertThat(simpleDateFormat.format(date), is("Jan/01/1970"));
 
-        System.out.println(String.format(
-                "|\"%s\"  |  \"%s\"|",
+        System.out.printf(
+                "|\"%s\"  |  \"%s\"|%n",
                 pattern,
-                simpleDateFormat.format(date)));
+                simpleDateFormat.format(date));
 
         pattern = "MMMM/d/yy";
         simpleDateFormat.applyPattern(pattern);
         assertThat(simpleDateFormat.format(date), is("January/1/70"));
 
-        System.out.println(String.format(
-                "|\"%s\"  |  \"%s\"|",
+        System.out.printf(
+                "|\"%s\"  |  \"%s\"|%n",
                 pattern,
-                simpleDateFormat.format(date)));
+                simpleDateFormat.format(date));
     }
 
     @Test
@@ -93,12 +93,10 @@ public class SimpleDateFormatTest {
         for (String[] details : formatElement) {
 
             simpleDateFormat.applyPattern(details[0]);
-            System.out.println(
-                    String.format("|\"%s\" |   %s |  \"%s\"|",
-                            details[0],
-                            details[1],
-                            simpleDateFormat.format(date)
-                    )
+            System.out.printf("|\"%s\" |   %s |  \"%s\"|%n",
+                    details[0],
+                    details[1],
+                    simpleDateFormat.format(date)
             );
         }
     }
@@ -148,12 +146,10 @@ public class SimpleDateFormatTest {
         for (String[] details : formatElement) {
 
             simpleDateFormat.applyPattern(details[0]);
-            System.out.println(
-                    String.format("|\"%s\"  |  %s |  \"%s\"|",
-                            details[0],
-                            details[1],
-                            simpleDateFormat.format(date)
-                    )
+            System.out.printf("|\"%s\"  |  %s |  \"%s\"|%n",
+                    details[0],
+                    details[1],
+                    simpleDateFormat.format(date)
             );
         }
     }

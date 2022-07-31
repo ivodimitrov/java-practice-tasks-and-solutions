@@ -13,37 +13,24 @@ public class CalculateDiscount {
   On each line in the output print the discounted price of the item with two digits after the decimal point
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
-    DecimalFormat df = new DecimalFormat("0.00");
+        Scanner in = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("0.00");
 
-    int numberOfValuesYouMustRead;
-    double inputNumbers;
-    double discount = 0.65;
-    double itemPriceAfterDiscount;
+        int numberOfValuesYouMustRead;
+        double inputNumbers;
+        double discount = 0.65;
+        double itemPriceAfterDiscount;
 
-    numberOfValuesYouMustRead = in.nextInt();
+        numberOfValuesYouMustRead = in.nextInt();
 
-    for (int i = 0; i < numberOfValuesYouMustRead; i++) {
-      inputNumbers = in.nextDouble();
-      itemPriceAfterDiscount = inputNumbers * (1 - discount);
-      System.out.println(df.format(itemPriceAfterDiscount));
+        for (int i = 0; i < numberOfValuesYouMustRead; i++) {
+            inputNumbers = in.nextDouble();
+            itemPriceAfterDiscount = inputNumbers * (1 - discount);
+            System.out.println(df.format(itemPriceAfterDiscount));
 
+        }
     }
-//    Other solution
-//
-//    Scanner sc = new Scanner(System.in);
-//    DecimalFormat df = new DecimalFormat("0.00");
-//    int items = sc.nextInt();
-//
-//    double disPrice;
-//
-//    for (int i = 0; i < items; i++) {
-//      double price = sc.nextDouble();
-//      disPrice = price * 0.35;
-//      System.out.println(df.format(disPrice));
-//    }
-  }
 }
 

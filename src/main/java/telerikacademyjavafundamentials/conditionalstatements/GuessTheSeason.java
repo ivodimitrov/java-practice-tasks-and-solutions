@@ -18,62 +18,62 @@ public class GuessTheSeason {
   On the only line of output, print the name of the season in pascal case
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String month = in.nextLine();
-    String date = in.nextLine();
+        String month = in.nextLine();
+        String date = in.nextLine();
 
-    String season = "";
-    int dateAsNum = Integer.parseInt(date);
+        String season = "";
+        int dateAsNum = Integer.parseInt(date);
 
-    switch (month) {
-      case "January":
-      case "February":
-        season = "Winter";
-        break;
-      case "March":
-        if (dateAsNum < 20) {
-          season = "Winter";
-        } else {
-          season = "Spring";
+        switch (month) {
+            case "January":
+            case "February":
+                season = "Winter";
+                break;
+            case "March":
+                if (dateAsNum < 20) {
+                    season = "Winter";
+                } else {
+                    season = "Spring";
+                }
+                break;
+            case "April":
+            case "May":
+                season = "Spring";
+                break;
+            case "June":
+                if (dateAsNum < 21) {
+                    season = "Spring";
+                } else {
+                    season = "Summer";
+                }
+                break;
+            case "July":
+            case "August":
+                season = "Summer";
+                break;
+            case "September":
+                if (dateAsNum < 22) {
+                    season = "Summer";
+                } else {
+                    season = "Autumn";
+                }
+                break;
+            case "October":
+            case "November":
+                season = "Autumn";
+                break;
+            case "December":
+                if (dateAsNum < 21) {
+                    season = "Autumn";
+                } else {
+                    season = "Winter";
+                }
+                break;
         }
-        break;
-      case "April":
-      case "May":
-        season = "Spring";
-        break;
-      case "June":
-        if (dateAsNum < 21) {
-          season = "Spring";
-        } else {
-          season = "Summer";
-        }
-        break;
-      case "July":
-      case "August":
-        season = "Summer";
-        break;
-      case "September":
-        if (dateAsNum < 22) {
-          season = "Summer";
-        } else {
-          season = "Autumn";
-        }
-        break;
-      case "October":
-      case "November":
-        season = "Autumn";
-        break;
-      case "December":
-        if (dateAsNum < 21) {
-          season = "Autumn";
-        } else {
-          season = "Winter";
-        }
-        break;
+        System.out.println(season);
     }
-    System.out.println(season);
-  }
 }

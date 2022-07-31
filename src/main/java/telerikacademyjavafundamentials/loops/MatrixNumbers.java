@@ -17,18 +17,18 @@ public class MatrixNumbers {
   2 3
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int number = in.nextInt();
+        int number = in.nextInt();
 
-    for (int row = 1; row <= number; row++) {
-      for (int col = row; col <= row + number - 1; ) {
-        System.out.print(col + " ");
-        col++;
-      }
-      System.out.println();
+        for (int row = 1; row <= number; row++) {
+            for (int col = row; col <= row + number - 1; ) {
+                System.out.print(col + " ");
+                col++;
+            }
+            System.out.println();
+        }
     }
-  }
 }

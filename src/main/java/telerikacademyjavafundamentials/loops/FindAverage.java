@@ -14,25 +14,25 @@ public class FindAverage {
   On the only line of output, print the average with two digits after the decimal point.
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
-    DecimalFormat df = new DecimalFormat("0.00");
+        Scanner in = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("0.00");
 
-    int numberOfValuesYouMustRead;
-    double inputNumbers;
-    double sum = 0;
-    int count = 0;
-    double average;
+        int numberOfValuesYouMustRead;
+        double inputNumbers;
+        double sum = 0;
+        int count = 0;
+        double average;
 
-    numberOfValuesYouMustRead = in.nextInt();
+        numberOfValuesYouMustRead = in.nextInt();
 
-    for (int i = 0; i < numberOfValuesYouMustRead; i++) {
-      inputNumbers = in.nextDouble();
-      sum = sum + inputNumbers;
-      count++;
+        for (int i = 0; i < numberOfValuesYouMustRead; i++) {
+            inputNumbers = in.nextDouble();
+            sum = sum + inputNumbers;
+            count++;
+        }
+        average = (sum / count);
+        System.out.println(df.format(average));
     }
-    average = (sum / count);
-    System.out.println(df.format(average));
-  }
 }

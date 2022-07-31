@@ -1,15 +1,10 @@
 package firstheadjava;
 
 class Duck extends Animal {
-    // static final variables are constants
-    public static final double NEW_PI = 3.141592653589793;
     private int size;
-    // The static duckCount variable is initialized only
-    // when the class is first loaded
-    private int duckCount = 0;
 
     /**
-     * Duck constructor. It's name is the same as the class name.
+     * Duck constructor. Its name is the same as the class name.
      * There is not a return type.
      * To make a Duck when you do not know the size. Default size
      * is set.
@@ -17,7 +12,8 @@ class Duck extends Animal {
      * because duckCount is static and won't be reset to 0.
      */
     Duck() {
-        duckCount++;
+        // The static duckCount variable is initialized only
+        // when the class is first loaded
     }
 
     /**
@@ -41,20 +37,6 @@ class Duck extends Animal {
         size = duckSize;
     }
 
-    /**
-     * Overloaded constructors means you have more than one constructor in your class.
-     * To compile, each constructor must have a different argument list.
-     */
-    Duck(String duckName) {
-        super();
-        // constructor code goes here
-    }
-
-    Duck(int duckSize, String duckName) {
-        super();
-        // constructor code goes here
-    }
-
     Duck(String duckName, int duckSize) {
         // constructor code goes here
     }
@@ -76,13 +58,5 @@ class Duck extends Animal {
         System.out.println("Duck is eating.");
     }
 
-    // final method
-    final void calcWhuffie() {
-        // this must never be overridden
-    }
-
     // final class (this code here is only for demonstration)
-    //    final class MyMostPer£ectClass {
-    //        // cannot be extended
-    //  }
 }

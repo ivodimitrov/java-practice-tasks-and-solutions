@@ -13,31 +13,31 @@ public class FindLargestThreeValues {
   Output the three largest numbers in the already described format.
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int n = in.nextInt();
-    int[] arr = new int[n];
+        int n = in.nextInt();
+        int[] arr = new int[n];
 
-    int i, largest, secondLargest, thirdLargest;
+        int i, largest, secondLargest, thirdLargest;
 
-    largest = secondLargest = thirdLargest = Integer.MIN_VALUE;
+        largest = secondLargest = thirdLargest = Integer.MIN_VALUE;
 
-    for (i = 0; i < arr.length; i++) {
+        for (i = 0; i < arr.length; i++) {
 
-      arr[i] = in.nextInt();
+            arr[i] = in.nextInt();
 
-      if (arr[i] > largest) {
-        thirdLargest = secondLargest;
-        secondLargest = largest;
-        largest = arr[i];
-      } else if (arr[i] > secondLargest) {
-        thirdLargest = secondLargest;
-        secondLargest = arr[i];
-      } else if (arr[i] > thirdLargest)
-        thirdLargest = arr[i];
+            if (arr[i] > largest) {
+                thirdLargest = secondLargest;
+                secondLargest = largest;
+                largest = arr[i];
+            } else if (arr[i] > secondLargest) {
+                thirdLargest = secondLargest;
+                secondLargest = arr[i];
+            } else if (arr[i] > thirdLargest)
+                thirdLargest = arr[i];
+        }
+        System.out.println(largest + ", " + secondLargest + " and " + thirdLargest);
     }
-    System.out.println(largest + ", " + secondLargest + " and " + thirdLargest);
-  }
 }

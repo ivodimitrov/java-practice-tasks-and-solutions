@@ -4,8 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ArraysClassTest {
 
@@ -109,8 +108,8 @@ public class ArraysClassTest {
         assertEquals("Wednesday", weekDays[0]);
         assertEquals("Thursday", weekDays[1]);
         assertEquals("Friday", weekDays[2]);
-        assertEquals(null, weekDays[3]);
-        assertEquals(null, weekDays[4]);
+        assertNull(weekDays[3]);
+        assertNull(weekDays[4]);
         assertEquals(weekDays[0], workdays[2]);
         assertEquals(weekDays[1], workdays[3]);
         assertEquals(weekDays[2], workdays[4]);
@@ -136,15 +135,15 @@ public class ArraysClassTest {
         weekDays[5] = "Saturday";
         weekDays[6] = "Sunday";
 
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         for (String day :
                 weekDays) {
-            days = days + "|" + day;
+            days.append("|").append(day);
         }
 
         assertEquals(7, weekDays.length);
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday", days.toString());
     }
 
     @Test
@@ -153,16 +152,16 @@ public class ArraysClassTest {
         String[] weekDays;
         weekDays = Arrays.copyOf(workdays, 7);
 
-        assertEquals(null, weekDays[5]);
-        assertEquals(null, weekDays[6]);
+        assertNull(weekDays[5]);
+        assertNull(weekDays[6]);
 
-        String days = "";
+        StringBuilder days = new StringBuilder();
         for (String day : weekDays) {
-            days = days + "|" + day;
+            days.append("|").append(day);
         }
 
         assertEquals(7, weekDays.length);
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday|null|null", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday|null|null", days.toString());
     }
 
     @Test
@@ -182,12 +181,12 @@ public class ArraysClassTest {
 
         weekDays = Arrays.copyOf(workdays, workdays.length);
 
-        String days = "";
+        StringBuilder days = new StringBuilder();
         for (String day : weekDays) {
-            days = days + "|" + day;
+            days.append("|").append(day);
         }
 
         assertEquals(5, weekDays.length);
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 }

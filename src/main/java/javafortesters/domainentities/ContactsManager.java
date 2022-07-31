@@ -4,7 +4,7 @@ public class ContactsManager {
 
 
     // Fields:
-    private Contact[] myFriends;
+    private final Contact[] myFriends;
 
     private int friendsCount;
 

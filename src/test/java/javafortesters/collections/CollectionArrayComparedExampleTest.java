@@ -51,7 +51,7 @@ public class CollectionArrayComparedExampleTest {
     @Test
     public void simpleDynamicCollectionExample() {
 
-        List<String> numbers0123 = new ArrayList<String>();
+        List<String> numbers0123 = new ArrayList<>();
 
         numbers0123.add("zero");
         numbers0123.add("one");

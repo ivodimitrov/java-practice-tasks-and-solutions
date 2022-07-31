@@ -16,48 +16,48 @@ public class BelowAndAboveAverage {
   On the third line, print all the numbers above the average
   */
 
-  private static void testInput() {
-    String inputString = "3,-12,0,0,13,5,1,0,-2";
+    private static void testInput() {
+        String inputString = "3,-12,0,0,13,5,1,0,-2";
 
-    ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
-    System.setIn(inputStream);
-  }
-
-  public static void main(String[] args) {
-
-    testInput();
-
-    DecimalFormat df = new DecimalFormat("0.00");
-    Scanner scanner = new Scanner(System.in);
-
-    String[] arr = scanner.nextLine().split(",");
-
-    double avg;
-    double sum = 0;
-
-    for (int i = 0; i < arr.length; i++) {
-      sum += Integer.parseInt(arr[i]);
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
+        System.setIn(inputStream);
     }
 
-    avg = sum / arr.length;
+    public static void main(String[] args) {
 
-    System.out.println("avg: " + df.format(avg));
-    System.out.print("below: ");
+        testInput();
 
-    for (int i = 0; i < arr.length; i++) {
-      if (Integer.parseInt(arr[i]) < avg) {
-        System.out.print(String.join(",", arr[i]));
-      }
+        DecimalFormat df = new DecimalFormat("0.00");
+        Scanner scanner = new Scanner(System.in);
+
+        String[] arr = scanner.nextLine().split(",");
+
+        double avg;
+        double sum = 0;
+
+        for (String s : arr) {
+            sum += Integer.parseInt(s);
+        }
+
+        avg = sum / arr.length;
+
+        System.out.println("avg: " + df.format(avg));
+        System.out.print("below: ");
+
+        for (int i = 0; i < arr.length; i++) {
+            if (Integer.parseInt(arr[i]) < avg) {
+                System.out.print(String.join(",", arr[i]));
+            }
+        }
+
+        System.out.println();
+        System.out.print("above: ");
+
+        for (int i = 0; i < arr.length; i++) {
+            if (Integer.parseInt(arr[i]) > avg) {
+                System.out.print(String.join(",", arr[i]));
+            }
+        }
     }
-
-    System.out.println();
-    System.out.print("above: ");
-
-    for (int i = 0; i < arr.length; i++) {
-      if (Integer.parseInt(arr[i]) > avg) {
-        System.out.print(String.join(",", arr[i]));
-      }
-    }
-  }
 }
 

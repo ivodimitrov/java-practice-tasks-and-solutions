@@ -27,7 +27,7 @@ public class ListInterfaceTest {
     @Test
     public void getAnElementAtAnIndex() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Monday");
         days.add("Tuesday");
@@ -41,7 +41,7 @@ public class ListInterfaceTest {
     @Test
     public void removeAnElementAtAnIndex() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Monday");
         days.add("Tuesday");
@@ -57,7 +57,7 @@ public class ListInterfaceTest {
     @Test
     public void canAddAnElementAtAnIndex() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Tuesday");
         days.add("Thursday");
@@ -80,7 +80,7 @@ public class ListInterfaceTest {
 
     @Test(expected = java.lang.IndexOutOfBoundsException.class)
     public void cannotAddAnElementOutSideListBounds() {
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Tuesday");
         days.add("Thursday");
@@ -97,8 +97,8 @@ public class ListInterfaceTest {
     @Test
     public void canAddAllElementsInACollectionAtASpecificIndex() {
 
-        List<String> days = new ArrayList<String>();
-        List<String> missingDays = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
+        List<String> missingDays = new ArrayList<>();
 
         days.add("Monday");
         days.add("Friday");
@@ -121,8 +121,8 @@ public class ListInterfaceTest {
     @Test
     public void canAddAllElementsInACollectionAtStartIndex() {
 
-        List<String> days = new ArrayList<String>();
-        List<String> missingDays = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
+        List<String> missingDays = new ArrayList<>();
 
         days.add("Wednesday");
         days.add("Thursday");
@@ -144,8 +144,8 @@ public class ListInterfaceTest {
     @Test
     public void canAddAllElementsInACollectionAtEndIndex() {
 
-        List<String> days = new ArrayList<String>();
-        List<String> missingDays = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
+        List<String> missingDays = new ArrayList<>();
 
         days.add("Monday");
         days.add("Tuesday");
@@ -168,7 +168,7 @@ public class ListInterfaceTest {
     @Test
     public void canFindTheIndexOfAnElement() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Tuesday");
         days.add("Thursday");
@@ -181,7 +181,7 @@ public class ListInterfaceTest {
     @Test
     public void canFindTheIndexOfAnElementWithDupes() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Tuesday");
         days.add("Thursday");
@@ -197,7 +197,7 @@ public class ListInterfaceTest {
     @Test
     public void canSetTheElementAtAnIndex() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Monday");
         days.add("Thursday");
@@ -216,7 +216,7 @@ public class ListInterfaceTest {
     @Test
     public void canCreateSubList() {
 
-        List<String> days = new ArrayList<String>();
+        List<String> days = new ArrayList<>();
 
         days.add("Monday");
         days.add("Tuesday");

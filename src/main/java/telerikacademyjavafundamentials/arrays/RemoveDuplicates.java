@@ -11,28 +11,28 @@ public class RemoveDuplicates {
   Maintain the relative order of the remaining items.
   */
 
-  private static void testInput() {
-    String inputString = "1,2,2,2,2,18,3,12";
+    private static void testInput() {
+        String inputString = "1,2,2,2,2,18,3,12";
 
-    ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
-    System.setIn(inputStream);
-  }
-
-  public static void main(String[] args) {
-
-    testInput();
-
-    Scanner scanner = new Scanner(System.in);
-
-    String[] list = scanner.nextLine().split(",");
-
-    ArrayList<String> result = new ArrayList<>();
-
-    for (String element : list) {
-      if (!result.contains(element)) {
-        result.add(element);
-      }
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(inputString.getBytes());
+        System.setIn(inputStream);
     }
-    System.out.println(String.join(",", result));
-  }
+
+    public static void main(String[] args) {
+
+        testInput();
+
+        Scanner scanner = new Scanner(System.in);
+
+        String[] list = scanner.nextLine().split(",");
+
+        ArrayList<String> result = new ArrayList<>();
+
+        for (String element : list) {
+            if (!result.contains(element)) {
+                result.add(element);
+            }
+        }
+        System.out.println(String.join(",", result));
+    }
 }
