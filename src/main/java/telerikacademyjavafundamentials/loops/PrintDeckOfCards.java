@@ -19,116 +19,57 @@ public class PrintDeckOfCards {
   5 of spades, 5 of clubs, 5 of hearts, 5 of diamonds
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String currentCard = in.nextLine();
-    int endCard = 0;
+        String currentCard = in.nextLine();
+        int endCard = switch (currentCard) {
+            case "2" -> 2;
+            case "3" -> 3;
+            case "4" -> 4;
+            case "5" -> 5;
+            case "6" -> 6;
+            case "7" -> 7;
+            case "8" -> 8;
+            case "9" -> 9;
+            case "10" -> 10;
+            case "J" -> 11;
+            case "Q" -> 12;
+            case "K" -> 13;
+            case "A" -> 14;
+            default -> 0;
+        };
 
-    switch (currentCard) {
-      case "2":
-        endCard = 2;
-        break;
-      case "3":
-        endCard = 3;
-        break;
-      case "4":
-        endCard = 4;
-        break;
-      case "5":
-        endCard = 5;
-        break;
-      case "6":
-        endCard = 6;
-        break;
-      case "7":
-        endCard = 7;
-        break;
-      case "8":
-        endCard = 8;
-        break;
-      case "9":
-        endCard = 9;
-        break;
-      case "10":
-        endCard = 10;
-        break;
-      case "J":
-        endCard = 11;
-        break;
-      case "Q":
-        endCard = 12;
-        break;
-      case "K":
-        endCard = 13;
-        break;
-      case "A":
-        endCard = 14;
-        break;
-    }
-
-    for (int card = 2; card <= endCard; card++) {
-      for (int color = 0; color < 4; color++) {
-        switch (card) {
-          case 2:
-            System.out.print("2");
-            break;
-          case 3:
-            System.out.print("3");
-            break;
-          case 4:
-            System.out.print("4");
-            break;
-          case 5:
-            System.out.print("5");
-            break;
-          case 6:
-            System.out.print("6");
-            break;
-          case 7:
-            System.out.print("7");
-            break;
-          case 8:
-            System.out.print("8");
-            break;
-          case 9:
-            System.out.print("9");
-            break;
-          case 10:
-            System.out.print("10");
-            break;
-          case 11:
-            System.out.print("J");
-            break;
-          case 12:
-            System.out.print("Q");
-            break;
-          case 13:
-            System.out.print("K");
-            break;
-          case 14:
-            System.out.print("A");
-            break;
+        for (int card = 2; card <= endCard; card++) {
+            for (int color = 0; color < 4; color++) {
+                switch (card) {
+                    case 2 -> System.out.print("2");
+                    case 3 -> System.out.print("3");
+                    case 4 -> System.out.print("4");
+                    case 5 -> System.out.print("5");
+                    case 6 -> System.out.print("6");
+                    case 7 -> System.out.print("7");
+                    case 8 -> System.out.print("8");
+                    case 9 -> System.out.print("9");
+                    case 10 -> System.out.print("10");
+                    case 11 -> System.out.print("J");
+                    case 12 -> System.out.print("Q");
+                    case 13 -> System.out.print("K");
+                    case 14 -> System.out.print("A");
+                }
+                switch (color) {
+                    case 0 -> System.out.print(" of spades, ");
+                    case 1 -> System.out.print(" of clubs, ");
+                    case 2 -> System.out.print(" of hearts, ");
+                    case 3 -> {
+                        System.out.print(" of diamonds");
+                        System.out.println();
+                    }
+                }
+            }
         }
-        switch (color) {
-          case 0:
-            System.out.print(" of spades, ");
-            break;
-          case 1:
-            System.out.print(" of clubs, ");
-            break;
-          case 2:
-            System.out.print(" of hearts, ");
-            break;
-          case 3:
-            System.out.print(" of diamonds");
-            System.out.println();
-            break;
-        }
-      }
     }
-  }
 }
 
 

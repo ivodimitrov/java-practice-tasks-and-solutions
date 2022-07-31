@@ -5,7 +5,7 @@ public class Wolf extends Canine {
         super();
         // constructor code goes here
     }
-    
+
     /**
      * The constructor that takes
      *

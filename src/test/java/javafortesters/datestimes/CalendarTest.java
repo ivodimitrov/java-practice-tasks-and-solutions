@@ -17,18 +17,18 @@ public class CalendarTest {
         System.out.println(cal.getTime().getTime());
         System.out.println(System.currentTimeMillis());
 
-        System.out.println(cal.toString());
+        System.out.println(cal);
 
         Calendar sameDate = Calendar.getInstance();
         sameDate.setTime(cal.getTime());
         assertThat(cal.equals(sameDate), is(true));
         assertThat(cal.compareTo(sameDate), is(0));
 
-        System.out.println(cal.getTime().toString());
+        System.out.println(cal.getTime());
         Calendar oneWeekFromNow = Calendar.getInstance();
         oneWeekFromNow.setTime(cal.getTime());
         oneWeekFromNow.add(Calendar.DATE, 7);
-        System.out.println(oneWeekFromNow.getTime().toString());
+        System.out.println(oneWeekFromNow.getTime());
 
         assertThat(oneWeekFromNow.after(cal), is(true));
         assertThat(cal.before(oneWeekFromNow), is(true));

@@ -13,11 +13,7 @@ public class Person {
     }
 
     public boolean isSamePerson(Person p) {
-        if (p.getId().equals(this.getId())) {
-            return true;
-        } else {
-            return false;
-        }
+        return p.getId().equals(this.getId());
     }
 
 }

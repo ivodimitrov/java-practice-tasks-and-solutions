@@ -15,35 +15,35 @@ public class RotateList {
   On the only line of output, print the numbers separated by a space.
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String[] inputArray = in.nextLine().split(",");
-    int order = in.nextInt();
+        String[] inputArray = in.nextLine().split(",");
+        int order = in.nextInt();
 
-    int[] arr = new int[inputArray.length];
+        int[] arr = new int[inputArray.length];
 
-    for (int i = 0; i < inputArray.length; i++) {
-      arr[i] = Integer.parseInt(inputArray[i]);
+        for (int i = 0; i < inputArray.length; i++) {
+            arr[i] = Integer.parseInt(inputArray[i]);
+        }
+
+        // rotate
+        for (int i = 0; i < order; i++) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+
+        // print
+        for (int k = 0; k < inputArray.length; k++) {
+            if (k < inputArray.length - 1) {
+                System.out.print(arr[k] + ",");
+            } else {
+                System.out.print(arr[k]);
+            }
+        }
     }
-
-    // rotate
-    for (int i = 0; i < order; i++) {
-      for (int j = 0; j < arr.length - 1; j++) {
-        int temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
-    }
-
-    // print
-    for (int k = 0; k < inputArray.length; k++) {
-      if (k < inputArray.length - 1) {
-        System.out.print(arr[k] + ",");
-      } else {
-        System.out.print(arr[k]);
-      }
-    }
-  }
 }

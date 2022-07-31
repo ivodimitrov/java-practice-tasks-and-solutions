@@ -2,6 +2,8 @@ package javafortesters.arraysiteration;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 
 public class ArrayExampleTest {
@@ -23,20 +25,11 @@ public class ArrayExampleTest {
 
     @Test
     public void arrayInitialization() {
-        int[] integers = new int[10];
-        int[] moreInts = new int[10];
-        int[] evenMore = new int[10];
 
-        String[] strings = new String[10];
-
-        int[] zeroLenght = {};
-        int[] moreZeroLenght = new int[0];
-
-        int[] ints1to10 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        String[] strings;
 
         int[] uninitializedArray;
 
-        uninitializedArray = new int[10];
         uninitializedArray = new int[]{100, 200, 300};
 
         strings = new String[]{"mr", "mrs", "sir", "lord", "madam"};
@@ -47,80 +40,79 @@ public class ArrayExampleTest {
 
     @Test
     public void forEachLoop() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         for (String workday : workdays) {
-            days = days + "|" + workday;
+            days.append("|").append(workday);
         }
 
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 
     @Test
     public void forLoopWithFixedCondition() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         for (int i = 0; i < 5; i++) {
-            days = days + "|" + workdays[i];
+            days.append("|").append(workdays[i]);
         }
 
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 
     @Test
     public void forLoopUsingIndexFixedCondition() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         for (int i = 0; i < 5; i++) {
-            days = days + "|" + i + "-" + workdays[i];
+            days.append("|").append(i).append("-").append(workdays[i]);
         }
 
         assertEquals(
                 "|0-Monday|1-Tuesday|2-Wednesday|3-Thursday|4-Friday",
-                days);
+                days.toString());
     }
 
     @Test
     public void forLoopMissingInitialization() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         int i = 0;
         for (; i < 5; i++) {
-            days = days + "|" + workdays[i];
+            days.append("|").append(workdays[i]);
         }
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 
     @Test
     public void forLoopMissingIterator() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
         int i = 0;
-        for (; i < 5; ) {
-            days = days + "|" + workdays[i];
+        while (i < 5) {
+            days.append("|").append(workdays[i]);
             i++;
         }
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 
     @Test
     public void forLoopMissingEverything() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
         int i = 0;
-        for (; ; ) {
-            days = days + "|" + workdays[i];
+        do {
+            days.append("|").append(workdays[i]);
             i++;
-            if (i >= 5) break;
-        }
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        } while (i < 5);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 
     @Test
     public void forEachWithIndex() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
         int dayIndex = 0;
         for (String workday : workdays) {
-            days = days + "|" + workdays;
+            days.append("|").append(Arrays.toString(workdays));
 
             System.out.println("Found " + workday +
                     " at position " + dayIndex);
@@ -143,12 +135,12 @@ public class ArrayExampleTest {
 
     @Test
     public void arraySizeInForLoop() {
-        String days = "";
+        StringBuilder days = new StringBuilder();
 
-        for (int i = 0; i < workdays.length; i++) {
-            days = days + "|" + workdays[i];
+        for (String workday : workdays) {
+            days.append("|").append(workday);
         }
 
-        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days);
+        assertEquals("|Monday|Tuesday|Wednesday|Thursday|Friday", days.toString());
     }
 }

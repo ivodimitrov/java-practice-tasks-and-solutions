@@ -15,52 +15,52 @@ public class CalculateChange {
   Print each required denomination on a new line, ordered from highest to lowest.
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    double price = in.nextDouble();
-    double paid = in.nextDouble();
+        double price = in.nextDouble();
+        double paid = in.nextDouble();
 
-    int change;
-    int calc1lev;
-    int calc50st;
-    int calc20st;
-    int calc10st;
-    int calc5st;
-    int calc2st;
-    int calc1st;
+        int change;
+        int calc1lev;
+        int calc50st;
+        int calc20st;
+        int calc10st;
+        int calc5st;
+        int calc2st;
+        int calc1st;
 
-    change = (int) ((paid - price) * 100);
+        change = (int) ((paid - price) * 100);
 
-    calc1lev = change / 100;
-    calc50st = (change - calc1lev * 100) / 50;
-    calc20st = (change - calc1lev * 100 - calc50st * 50) / 20;
-    calc10st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20) / 10;
-    calc5st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10) / 5;
-    calc2st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10 - calc5st * 5) / 2;
-    calc1st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10 - calc5st * 5 - calc2st * 2);
+        calc1lev = change / 100;
+        calc50st = (change - calc1lev * 100) / 50;
+        calc20st = (change - calc1lev * 100 - calc50st * 50) / 20;
+        calc10st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20) / 10;
+        calc5st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10) / 5;
+        calc2st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10 - calc5st * 5) / 2;
+        calc1st = (change - calc1lev * 100 - calc50st * 50 - calc20st * 20 - calc10st * 10 - calc5st * 5 - calc2st * 2);
 
-    if (calc1lev != 0) {
-      System.out.println(calc1lev + " x 1 lev");
+        if (calc1lev != 0) {
+            System.out.println(calc1lev + " x 1 lev");
+        }
+        if (calc50st != 0) {
+            System.out.println(calc50st + " x 50 stotinki");
+        }
+        if (calc20st != 0) {
+            System.out.println(calc20st + " x 20 stotinki");
+        }
+        if (calc10st != 0) {
+            System.out.println(calc10st + " x 10 stotinki");
+        }
+        if (calc5st != 0) {
+            System.out.println(calc5st + " x 5 stotinki");
+        }
+        if (calc2st != 0) {
+            System.out.println(calc2st + " x 2 stotinki");
+        }
+        if (calc1st != 0) {
+            System.out.println(calc1st + " x 1 stotinka");
+        }
     }
-    if (calc50st != 0) {
-      System.out.println(calc50st + " x 50 stotinki");
-    }
-    if (calc20st != 0) {
-      System.out.println(calc20st + " x 20 stotinki");
-    }
-    if (calc10st != 0) {
-      System.out.println(calc10st + " x 10 stotinki");
-    }
-    if (calc5st != 0) {
-      System.out.println(calc5st + " x 5 stotinki");
-    }
-    if (calc2st != 0) {
-      System.out.println(calc2st + " x 2 stotinki");
-    }
-    if (calc1st != 0) {
-      System.out.println(calc1st + " x 1 stotinka");
-    }
-  }
 }

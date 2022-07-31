@@ -11,18 +11,18 @@ public class From1ToN {
   On the only line of output, print all the numbers from 1 to N separated by whitespace
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int number = in.nextInt();
+        int number = in.nextInt();
 
-    for (int i = 1; i <= number; i++) {
-      if (i < (number)) {
-        System.out.print(i + " ");
-      } else {
-        System.out.print(i);
-      }
+        for (int i = 1; i <= number; i++) {
+            if (i < (number)) {
+                System.out.print(i + " ");
+            } else {
+                System.out.print(i);
+            }
+        }
     }
-  }
 }

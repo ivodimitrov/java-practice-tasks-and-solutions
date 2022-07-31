@@ -25,7 +25,7 @@ public class MultiDimensionalArraysTest {
                     }
                     count++;
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
     }
@@ -114,7 +114,6 @@ public class MultiDimensionalArraysTest {
     @Test
     public void createRagged3dArray() {
 
-        int[][][] ragged3d = new int[10][][];
     }
 }
 

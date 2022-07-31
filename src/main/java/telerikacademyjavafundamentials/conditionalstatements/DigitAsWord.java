@@ -13,48 +13,26 @@ public class DigitAsWord {
   Output a single line - should the input be a valid digits, print the english word for the digits. Otherwise, print "not a digit".
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    String digit = in.nextLine();
+        String digit = in.nextLine();
 
-    String digitString;
+        String digitString = switch (digit) {
+            case "0" -> "zero";
+            case "1" -> "one";
+            case "2" -> "two";
+            case "3" -> "three";
+            case "4" -> "four";
+            case "5" -> "five";
+            case "6" -> "six";
+            case "7" -> "seven";
+            case "8" -> "eight";
+            case "9" -> "nine";
+            default -> "not a digit";
+        };
 
-    switch (digit) {
-      case "0":
-        digitString = "zero";
-        break;
-      case "1":
-        digitString = "one";
-        break;
-      case "2":
-        digitString = "two";
-        break;
-      case "3":
-        digitString = "three";
-        break;
-      case "4":
-        digitString = "four";
-        break;
-      case "5":
-        digitString = "five";
-        break;
-      case "6":
-        digitString = "six";
-        break;
-      case "7":
-        digitString = "seven";
-        break;
-      case "8":
-        digitString = "eight";
-        break;
-      case "9":
-        digitString = "nine";
-        break;
-      default:
-        digitString = "not a digit";
+        System.out.println(digitString);
     }
-    System.out.println(digitString);
-  }
 }

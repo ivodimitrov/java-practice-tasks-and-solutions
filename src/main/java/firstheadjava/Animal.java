@@ -51,7 +51,7 @@ public abstract class Animal {
     /**
      * An abstract class means the class must be extended, an abstract method
      * means the method must be overridden.
-     * An abstract method has no body!
+     * An abstract method has nobody!
      * If you declare an abstract method, you MUST mark the class abstract as
      * well. You can’t have an abstract method in a non-abstract class.
      */

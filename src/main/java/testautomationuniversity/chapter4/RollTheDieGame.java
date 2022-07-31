@@ -17,7 +17,7 @@ public class RollTheDieGame {
             int die = random.nextInt(6) + 1;
             currentSpace = currentSpace + die;
 
-            System.out.print(String.format("Roll #%d: You've rolled a %d. ", i, die));
+            System.out.printf("Roll #%d: You've rolled a %d. ", i, die);
 
             if (currentSpace == lastSpace) {
                 System.out.print("You're on space " + currentSpace + ". Congrats, you win!");
@@ -25,7 +25,7 @@ public class RollTheDieGame {
             } else if (currentSpace > lastSpace) {
                 System.out.print("Unfortunately, that takes you past " + lastSpace + " spaces. You lose!");
                 break;
-            } else if (i == maxRolls && currentSpace < lastSpace) {
+            } else if (i == maxRolls) {
                 System.out.println("You're on space " + currentSpace + ".");
                 System.out.println("Unfortunately, you didn't make it to all " +
                         lastSpace + " spaces. You lose!");

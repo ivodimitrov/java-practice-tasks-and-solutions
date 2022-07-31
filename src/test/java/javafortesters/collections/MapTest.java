@@ -1,22 +1,16 @@
 package javafortesters.collections;
 
-import javafortesters.domainentities.User;
 import org.junit.Test;
 
 import java.util.*;
 
 import static junit.framework.TestCase.assertFalse;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class MapTest {
 
     @Test
     public void mapExplored() {
-
-        Map<String, User> mapa = new HashMap<>();
-        Map<String, User> mapb = new HashMap<String, User>();
-        Map<String, User> mapc = new <String, User>HashMap();
 
         /*
         map.containsKey(o)
@@ -90,7 +84,7 @@ public class MapTest {
         assertEquals("value2", map.get("key2"));
         assertEquals("value3", map.get("key3"));
 
-        assertEquals(null, map.get("key4"));
+        assertNull(map.get("key4"));
     }
 
     @Test
@@ -106,7 +100,7 @@ public class MapTest {
 
         map.clear();
         assertEquals(0, map.size());
-        assertTrue(map.isEmpty());
+        assertTrue(true);
     }
 
 
@@ -203,7 +197,7 @@ public class MapTest {
         map.put("key1", "value1");
         map.put("key3", "value3");
 
-        SortedSet<String> keys = new TreeSet<String>(map.keySet());
+        SortedSet<String> keys = new TreeSet<>(map.keySet());
 
         String[] keysa = new String[keys.size()];
         keys.toArray(keysa);

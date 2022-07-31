@@ -14,22 +14,22 @@ public class CalculateComplexSum {
   Output only one number - the sum of the sequence for the given N and x
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int n = in.nextInt();
-    double x = in.nextDouble();
+        int n = in.nextInt();
+        double x = in.nextDouble();
 
-    double factorialN = 1;
-    double resultX = 1;
-    double sum = 0;
+        double factorialN = 1;
+        double resultX = 1;
+        double sum = 0;
 
-    for (int i = 1; i <= n; i++) {
-      factorialN *= i;
-      resultX *= x;
-      sum += (factorialN / resultX);
+        for (int i = 1; i <= n; i++) {
+            factorialN *= i;
+            resultX *= x;
+            sum += (factorialN / resultX);
+        }
+        System.out.printf("%.5f", (1 + sum));
     }
-    System.out.printf("%.5f", (1 + sum));
-  }
 }

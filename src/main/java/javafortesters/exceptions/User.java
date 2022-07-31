@@ -2,7 +2,7 @@ package javafortesters.exceptions;
 
 public class User {
 
-    private String username;
+    private final String username;
     private String password;
 
     public User() {

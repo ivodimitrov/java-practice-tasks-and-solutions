@@ -22,10 +22,6 @@ public class Rectangle {
         this.length = length;
     }
 
-    public double getWidth() {
-        return width;
-    }
-
     public void setWidth(double width) {
         this.width = width;
     }

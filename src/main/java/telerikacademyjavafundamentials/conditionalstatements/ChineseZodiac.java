@@ -19,60 +19,36 @@ public class ChineseZodiac {
   On the only line of output, print the corresponding zodiac Sign
    */
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-    int year = in.nextInt();
+        int year = in.nextInt();
 
-    String animal = "";
-    int calcYear;
+        String animal = "";
+        int calcYear;
 
-    if (year < 2000) {
-      calcYear = 12 - ((2000 - year) % 12);
-    } else {
-      calcYear = (year - 2000) % 12;
+        if (year < 2000) {
+            calcYear = 12 - ((2000 - year) % 12);
+        } else {
+            calcYear = (year - 2000) % 12;
+        }
+
+        switch (calcYear) {
+            case 0 -> animal = "Dragon";
+            case 1 -> animal = "Snake";
+            case 2 -> animal = "Horse";
+            case 3 -> animal = "Sheep";
+            case 4 -> animal = "Monkey";
+            case 5 -> animal = "Rooster";
+            case 6 -> animal = "Dog";
+            case 7 -> animal = "Pig";
+            case 8 -> animal = "Rat";
+            case 9 -> animal = "Ox";
+            case 10 -> animal = "Tiger";
+            case 11 -> animal = "Hare";
+        }
+        System.out.println(animal);
     }
-
-    switch (calcYear) {
-      case 0:
-        animal = "Dragon";
-        break;
-      case 1:
-        animal = "Snake";
-        break;
-      case 2:
-        animal = "Horse";
-        break;
-      case 3:
-        animal = "Sheep";
-        break;
-      case 4:
-        animal = "Monkey";
-        break;
-      case 5:
-        animal = "Rooster";
-        break;
-      case 6:
-        animal = "Dog";
-        break;
-      case 7:
-        animal = "Pig";
-        break;
-      case 8:
-        animal = "Rat";
-        break;
-      case 9:
-        animal = "Ox";
-        break;
-      case 10:
-        animal = "Tiger";
-        break;
-      case 11:
-        animal = "Hare";
-        break;
-    }
-    System.out.println(animal);
-  }
 }
 

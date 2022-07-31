@@ -10,9 +10,9 @@ import java.util.Scanner;
  */
 public class InstantCreditCheck {
 
-    private static int requiredSalary = 25000;
-    private static int requiredCreditScore = 700;
-    private static Scanner scanner = new Scanner(System.in);
+    private static final int requiredSalary = 25000;
+    private static final int requiredCreditScore = 700;
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -41,11 +41,7 @@ public class InstantCreditCheck {
     }
 
     private static boolean isUserQualified(int creditScore, double salary) {
-        if (creditScore >= requiredCreditScore && salary >= requiredSalary) {
-            return true;
-        } else {
-            return false;
-        }
+        return creditScore >= requiredCreditScore && salary >= requiredSalary;
     }
 
     private static void notifyUser(boolean isQualified) {

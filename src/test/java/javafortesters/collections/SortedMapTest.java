@@ -14,7 +14,6 @@ public class SortedMapTest {
 
     @Test
     public void exploreSortedMap() {
-        SortedMap<String, String> map = new TreeMap<>();
 
         /*
         map.firstKey()

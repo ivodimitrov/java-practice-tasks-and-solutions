@@ -29,7 +29,7 @@ public class CollectionsExercisesTest {
     @Test
     public void createAndManipulateACollectionOfUsers() {
 
-        Collection<User> someUsers = new ArrayList<User>();
+        Collection<User> someUsers = new ArrayList<>();
 
         User bob = new User("bob", "Passw0rd");
         User eris = new User("eris", "Cha0sTime");
@@ -43,7 +43,7 @@ public class CollectionsExercisesTest {
         assertEquals(2, someUsers.size());
         assertFalse(someUsers.isEmpty());
 
-        Collection<User> secondUsers = new ArrayList<User>();
+        Collection<User> secondUsers = new ArrayList<>();
 
         User robert = new User("robert", "9assword");
         User aleister = new User("aleister", "Pass5word");
@@ -71,7 +71,7 @@ public class CollectionsExercisesTest {
     @Test
     public void createAndManipulateAListOfUsers() {
 
-        List<User> someUsers = new ArrayList<User>();
+        List<User> someUsers = new ArrayList<>();
 
         assertEquals(0, someUsers.size());
 
@@ -95,7 +95,7 @@ public class CollectionsExercisesTest {
     @Test
     public void createAndManipulateASetOfUsers() {
 
-        Set<User> someUsers = new HashSet<User>();
+        Set<User> someUsers = new HashSet<>();
 
         assertEquals(0, someUsers.size());
 
@@ -111,7 +111,7 @@ public class CollectionsExercisesTest {
     @Test
     public void createAndManipulateAMapOfUsers() {
 
-        Map<String, User> someUsers = new HashMap<String, User>();
+        Map<String, User> someUsers = new HashMap<>();
 
         assertEquals(0, someUsers.size());
 
